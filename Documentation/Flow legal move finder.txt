@@ -1,0 +1,13 @@
+1. find all technically possible moves; + - X etc. (TRY ASM ALGORITHM!) 
+1.5. place attack lines that intersect opponent's king in king attack register.
+2. prune moves that are outside the board.
+3. prune moves with special rules if they do not apply: en passant, castling.
+4. prune moves that are blocked by a piece, add this piece in attacking register.
+5. check for each piece except king if it is attacked and it's position is in the op. kings attack
+   register. Prune if both are true. Skip if either register is empty.
+
+
+//might implement:
+  as step 4.5, repeat steps 1-4 for opponent to ensure attack history is set already. 
+  This is unnecessary in a normal chess game, but some variations may allow this to be a 
+  problem.

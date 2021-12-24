@@ -1,0 +1,21 @@
+Diagonal naming convention in lilith:
+
+ex. A1R
+
+Diagonal starting on A file, beginning on rank 1, leaning to the right.
+
+note diagonal according to lowest part on board.
+
+diagonals are stored in uint_8 variables as follows:
+
+L|FFF|XRRR
+| |    | 
+| |    rank
+| File
+Lean
+
+The eighth bit denotes the diagonal's lean. 0 is right leaning, 1 left leaning.
+Bits seven through five denote the diagonal's starting file.  
+Bits three through one denote the diagonal's starting rank.
+The fourth bit is unused as three bits is enough to note 8 different states.
+
