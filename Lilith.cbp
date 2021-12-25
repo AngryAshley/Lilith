@@ -35,8 +35,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/UCIparser.h" />
+		<Unit filename="include/external.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/UCIparser.cpp" />
+		<Unit filename="src/external.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

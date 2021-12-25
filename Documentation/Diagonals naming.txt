@@ -19,3 +19,8 @@ Bits seven through five denote the diagonal's starting file.
 Bits three through one denote the diagonal's starting rank.
 The fourth bit is unused as three bits is enough to note 8 different states.
 
+Diagonals are calculated from the position of the piece. Since many positionally calculated
+diagonals are equivalent, a LUT is used to simplify the diagonals back to the lowest values.
+Another LUT is available to see which bitboard coordinates are part of one of the simplified
+diagonals.
+

@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1639819690 source:d:\projects\lilith\src\uciparser.cpp
+	"UCIparser.h"
+
+1639756717 d:\projects\lilith\include\uciparser.h
+
+1640378252 source:d:\projects\lilith\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdint.h>
+	<vector>
+	<external.h>
+
+1640378273 d:\projects\lilith\include\external.h
+	<stdint.h>
+
+1640377729 source:d:\projects\lilith\src\external.cpp
+	"external.h"
+

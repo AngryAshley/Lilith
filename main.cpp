@@ -5,6 +5,10 @@
  ********************************************************/
 
 #include <iostream>
+#include <stdlib.h>
+#include <stdint.h>
+#include <vector>
+#include <external.h>
 
 using namespace std;
 
@@ -27,8 +31,8 @@ void init(){
 
 }
 
-int main(int argc, char** argv){
-    for(i=0,i<argc, i++)args[i]=argv[i];
+int main(int argc, char* argv[]){
+    for(uint8_t i=0;i<argc; i++)args.push_back(argv[i]);
     ident();
     init();
     return 0;
